@@ -1,0 +1,16 @@
+{
+  "name": "map_app",
+  "version": "1.0.0",
+  "description": "Map app for Typescript Udemy course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "author": "Manuel Marín",
+  "license": "MIT",
+  "devDependencies": {
+    "@faker-js/faker": "^6.0.0-alpha.5",
+    "lite-server": "^2.6.1"
+  }
+}
