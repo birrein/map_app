@@ -11,6 +11,13 @@
   "license": "MIT",
   "devDependencies": {
     "@faker-js/faker": "^6.0.0-alpha.5",
-    "lite-server": "^2.6.1"
+    "@types/google.maps": "^3.47.4",
+    "@typescript-eslint/eslint-plugin": "^5.11.0",
+    "@typescript-eslint/parser": "^5.11.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.3.0",
+    "lite-server": "^2.6.1",
+    "parcel": "^2.3.1"
   }
 }
