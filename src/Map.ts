@@ -24,4 +24,8 @@ export class Map {
 
     this.geoCoder.addMarkerInfo(marker, mappable);
   }
+
+  searchText(options: SearchOptions): void {
+    this.geoCoder.searchText(options);
+  }
 }

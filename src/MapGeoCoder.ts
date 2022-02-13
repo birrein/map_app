@@ -26,4 +26,22 @@ export class MapGeoCoder {
       });
     });
   }
+
+  searchText(options: SearchOptions): void {
+    options.searchButton.addEventListener('click', () => {
+      const address = options.input.value;
+      this.geocoder.geocode({ address }, (results, status) => {
+        if (status === google.maps.GeocoderStatus.OK) {
+          this.map.setCenter(results[0].geometry.location);
+          this.map.setZoom(15);
+          new google.maps.Marker({
+            map: this.map,
+            position: results[0].geometry.location,
+          });
+        } else {
+          window.alert('Geocoder failed due to: ' + status);
+        }
+      });
+    });
+  }
 }
