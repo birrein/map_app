@@ -4,7 +4,7 @@ import { Person } from './Person';
 /**
  * Passenger class
  */
-export class Passenger extends Person {
+export class Driver extends Person {
   /**
    * Constructor
    */
